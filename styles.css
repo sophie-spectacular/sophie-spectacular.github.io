@@ -1,26 +1,15 @@
-
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.logo img {
-    width: 50px;
-    height: 50px;
-}
-
-
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #F5F5F5; /* Light Gray background */
     color: #333; /* Dark text color */
+    line-height: 1.6;
 }
 
 .fixed-header {
@@ -36,21 +25,35 @@ body {
     z-index: 1000;
 }
 
-/* Navigation links color */
-nav ul li a {
-    text-decoration: none;
-    color: #fff; /* White color for navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-/* Main content container */
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .container {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Set maximum width if you want to limit content width */
+    margin: 80px auto 20px; /* Center the container, with space at the top for fixed header */
     padding: 20px;
 }
 
-/* Row and column layout */
 .row {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -59,7 +62,6 @@ nav ul li a {
     margin: 0 10px;
 }
 
-/* Gallery button style */
 .gallery-button {
     background-color: #967BB6; /* Lavender color for the button */
     color: #fff;
@@ -69,8 +71,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Footer styles */
-footer {
+.footer {
     background-color: #967BB6; /* Lavender color for the footer */
     color: #fff;
     text-align: center;
@@ -80,30 +81,13 @@ footer {
     width: 100%;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .fixed-header {
+        padding: 10px;
+    }
 }
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.footer-links i {
-    margin-right: 5px;
-}
-
