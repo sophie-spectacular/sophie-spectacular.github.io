@@ -106,7 +106,7 @@
  }
  
 .hero {
-    background-image: url('imgs/logo.png');
+    background-image: url('path/to/your/image.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -125,5 +125,3 @@
    max-width: 100%;
    height: auto;
  }
- 
-
