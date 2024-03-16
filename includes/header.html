@@ -1,1 +1,55 @@
+<!-- header.html -->
+<style>
+/* CSS styles for header */
+header {
+    background-color: #e6ccff;  /* Light purple background */
+    padding: 20px 0;  /* Add some padding for spacing */
+}
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;  /* Add padding to center content */
+    display: flex;
+    justify-content: space-between;  /* Align logo and nav items to the edges */
+    align-items: center;  /* Center vertically */
+}
+
+.logo {
+    font-size: 24px;  /* Increase font size for the logo */
+    color: #6b3e99;   /* Dark purple */
+    text-transform: uppercase;  /* Uppercase text for the logo */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #666;  /* Dark gray */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #6b3e99;  /* Dark purple on hover */
+}
+</style>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="science.html">Science Work</a></li>
+                <li><a href="writing.html">Writing Work</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
