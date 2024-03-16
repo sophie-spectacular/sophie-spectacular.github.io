@@ -1,192 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Sophie D'Halleweyn</title>
-    <style>
-       * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Copperplate', 'Times New Roman', Times, serif;
- }
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
- body {
-   margin: 0;
-   padding-top: 100px;
- }
+<!-- Include header -->
+{% include includes/header.html %}
 
+<!-- Main content -->
+<div class="container">
+    <h2>Welcome to My Website</h2>
+    <p>This is a generic homepage for my personal website.</p>
+    <p>Feel free to explore other sections using the navigation menu.</p>
+</div>
 
- .navbar {
-   background-color: #b19cd9;
-   padding: 10px 0;
-   position: fixed;
-   width: 100%;
-   height: 120px;
-   top: -20px;
-   z-index: 1000;
- }
+<!-- Include footer -->
+{% include includes/footer.html %}
 
- .navbar .logo {
-   color: #ffffff;
-   font-size: 50px;
-   float: left;
- }
-
- .navbar .menu {
-   float: right;
- }
-
- .navbar .menu li {
-   display: inline;
-   margin-right: 5px;
- }
-
- .navbar .menu li a {
-   color: #ffffff;
-   font-size: 24px;
-   text-decoration: none;
- }
-
- .navbar .menu li a:hover {
-   color: #daffe7;
- }
-
-
-
- .cta-button {
-   display: inline-block;
-   background-color: #8bc34a;
-   color: #ffffff;
-   padding: 10px 20px;
-   text-decoration: none;
-   margin-top: 20px;
- }
-
- .content {
-   padding: 50px 0;
-   background-color: #f5f5f5;
- }
-
- .footer {
-   background-color: #b19cd9;
-   color: white;
-   text-align: center;
-   padding: 20px 0;
-   width: 100%;
- }
-
- .social-icons {
-   margin-bottom: 10px;
-   text-align: right;
- }
-
- .social-icon {
-   font-size: 24px;
-   color: white;
-   margin: 0 15px;
-   transition: color 0.3s ease;
- }
-
- .social-icon:hover {
-   color: #daffe7;
- }
-
-
- .container {
-   width: 80%;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 40px 0;
- }
- 
-.hero {
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 200px 0;
-    height: 700px;
-}
-
-.hero h1 {
-    font-size: 60px;
-    color: white;
-    margin-bottom: 20px;
-}
-.hero h3 {
-    font-size: 30px;
-    color: white;
-}
-
- img {
-   max-width: 100%;
-   height: auto;
- }
-
-      .gallery-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 32px;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.gallery-button:hover {
-    background-color: white;
-    color: #b19cd9;
-}
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="container">
-          <div class="logo">SD</div>
-          <ul class="menu">
-            <li><a href="https://pipiskyblue.github.io/about">About Me</a></li>
-            <li><a href="https://pipiskyblue.github.io/research">Research</a></li>
-            <li><a href="https://pipiskyblue.github.io/gallery">Gallery</a></li>
-            <li><a href="https://pipiskyblue.github.io/blog">Blog</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <div class="hero" style="background-image: url('imgs/petitallegro.gif')">
-        <h1>Sophie D'Halleweyn</h1>
-        <h3>Artist. Scientist.</h3>
-    </div>
-
-    <div class="hero" style="background-image: url('imgs/presentation.jpeg')">
-        <a href="https://pipiskyblue.github.io/research" class="gallery-button">Research</a>
-    </div>
-    
-    <div class="hero" style="background-image: url('imgs/unnamed.jpg')">
-        <a href="https://pipiskyblue.github.io/gallery" class="gallery-button">Gallery</a>
-    </div>
-
-     <footer class="footer">
-      <div class="container">
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/sophie-d-halleweyn-b1568a28a" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/SophieD517" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="mailto:concertchoirbesties@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
-        </div>
-      </div>
-      <div style=font-size:0.7rem>
-        © 2023 Sophie D'Halleweyn. All rights reserved.
-      </div>
-    </footer>
-
-  </body>
-
+</body>
 </html>
